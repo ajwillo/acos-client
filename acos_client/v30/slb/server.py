@@ -25,8 +25,8 @@ class Server(base.BaseV30):
 
     url_prefix = '/slb/server/'
 
-    def all(self, **kwargs):
-        return self._get(self.url_prefix, **kwargs)
+    def all(self):
+        return self._get(self.url_prefix)
     
     def get(self, name, **kwargs):
         return self._get(self.url_prefix + name, **kwargs)
